@@ -5,7 +5,7 @@ export default function Defaultlayout(props) {
      <div className="layout">
         <div className="navbar">
             <div className="left">
-                  <a href="/"><img src="assets/FotoFreaks_newformat_black.png" alt="" className="logo"/></a>
+                  <img src="assets/FotoFreaks_newformat_black.png" alt="" className="logo"/>
             </div>
             <div className="right">
                   <ul className='menu'>
