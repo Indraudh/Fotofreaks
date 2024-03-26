@@ -1,9 +1,9 @@
 import Defaultlayout from '../components/Defaultlayout';
-import './home.scss';
-export default function Home() {
+import './event.scss';
+export default function Event() {
   return (
     <Defaultlayout>
-    <h1>This is home page</h1>
+    <h1>This is Event page</h1>
     </Defaultlayout>
   )
 }

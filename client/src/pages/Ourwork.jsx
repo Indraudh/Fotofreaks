@@ -1,9 +1,9 @@
 import Defaultlayout from '../components/Defaultlayout';
-import './home.scss';
-export default function Home() {
+import './ourwork.scss';
+export default function Ourwork() {
   return (
     <Defaultlayout>
-    <h1>This is home page</h1>
+    <h1>This is Our Work page</h1>
     </Defaultlayout>
   )
 }
