@@ -5,10 +5,12 @@
     display: flex;
     .left{
         flex:0.3;
+        a{
             .logo{
                 z-index: 3;
                 height:100%;
                 margin-left: 1.8vw;
+            }
         }
     }
     .right{
