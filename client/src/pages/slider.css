@@ -1,0 +1,90 @@
+.container {
+  width: 85%;
+  height: 25rem;
+  margin-left: 5%;
+  position: relative;
+  overflow: hidden;
+  align-self: center;
+}
+
+.pic-container {
+  height: inherit;
+  width: inherit;
+}
+
+.pic-container,
+.pic,
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  
+  transition: all 500ms cubic-bezier(.42, .84, 0, 1.06);
+}
+
+.pic__img {
+  width:90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.slider-btns {
+  display: flex;
+  gap: 3rem;
+}
+
+.slider-btns
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+}
+.btn-left,.btn-right{
+    cursor: pointer;
+    background-color: transparent;
+    color: #2d3030;
+    opacity: 60%;
+    border: none;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.btn-left:hover,
+.btn-right:hover{
+  transform: scale(1.4);
+  opacity:100%;
+}
+
+.square1,
+.square2 {
+  position: absolute;
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+   /* Example color with 50% opacity */
+  /* Adjust positioning as needed */
+}
+
+.square1 {
+  top: 10px; /* Adjust top position */
+  left: 10px; /* Adjust left position */
+  background-color: rgba(255, 0, 0, 0.684);
+}
+
+.square2 {
+  bottom: 10px; /* Adjust bottom position */
+  right: 10px; /* Adjust right position */
+  background-color: rgba(255, 0, 0, 0.659);
+  width: 55%;
+  height: 13%;
+  z-index: 7;
+}
