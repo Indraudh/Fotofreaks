@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import './home.scss';
 import './slider.css';
 
-export default function Home() {
-
+export default function Home({selected , setselected}) {
+  setselected("home");
   useEffect(() => { 
     const slides= document.querySelectorAll('.pic');
     const btnRight = document.querySelector('.btn-right');

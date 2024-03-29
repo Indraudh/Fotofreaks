@@ -1,0 +1,58 @@
+.topbar{
+    position: fixed;
+    z-index: 10;
+    background-color: transparent;
+    .navbar{
+        width: 100vw;
+        height:7vh;
+        padding :5px;
+        display: flex;
+        background-color: white;
+        z-index: 10;
+        .left{
+            flex:0.3;
+            a{
+                .logo{
+                    z-index: 20;
+                    height:100%;
+                    margin-left: 1.8vw;
+                }
+            }
+        }
+        .right{
+            flex:0.8;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .menu{
+                display: flex;
+                list-style-type: none;
+                li{
+                    display: inline-block;
+                    margin-right: 3.6vw;
+                    transition: all ease;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        margin-bottom: 2px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        font-size: 20px;
+                    }
+                    &:hover{
+                        border-bottom: 2px solid black;
+                    }
+                    &.active{
+                        border-bottom: 2px solid black;
+                    } 
+                }
+            }
+        }
+    }
+    hr{
+        height: 1px;
+        width: 97%;
+        margin-left: 18px;
+        background-color: aquamarine;
+    }
+}
