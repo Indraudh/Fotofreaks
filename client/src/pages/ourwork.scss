@@ -1,0 +1,59 @@
+@import "../global.scss";
+
+.portfolio_header {
+    text-align: center;
+    padding: 35px;
+
+    .portfolio_title {
+        font-family: 'Playfair Display';
+        font-size: 30px;
+    }
+}
+
+.portfolio_row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4px 4px;
+}
+
+.portfolio_column {
+    flex: 24%;
+    width: 24%;
+    padding: 0 4px;
+
+    .imgholder {
+        width: 100%;
+        background-color: black;
+        padding: 0;
+        overflow: hidden;
+        margin-top: 8px;
+
+        .portfolio_img {
+            vertical-align: middle;
+            width: 100%;
+
+            &:hover {
+                scale: 1.2;
+                opacity: 0.5;
+                transition: 0.5s all ease;
+            }
+        }
+    }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .portfolio_column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .portfolio_column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
