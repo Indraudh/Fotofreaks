@@ -1,6 +1,6 @@
 import Defaultlayout from '../components/Defaultlayout';
 import './about.scss';
-export default function About({selected , setselected}) {
+export default function About({setselected}) {
   setselected("about");
   return (
     <Defaultlayout>

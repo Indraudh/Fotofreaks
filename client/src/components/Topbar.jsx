@@ -1,5 +1,5 @@
 import './topbar.scss'
-export default function Topbar({selected, setselected}) {
+export default function Topbar({selected}) {
   return (
     <div className="topbar">
     <div className="navbar">

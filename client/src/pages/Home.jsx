@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import './home.scss';
 import './slider.css';
 
-export default function Home({selected , setselected}) {
+export default function Home({setselected}) {
   setselected("home");
   useEffect(() => { 
     const slides= document.querySelectorAll('.pic');

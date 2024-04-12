@@ -12,15 +12,15 @@ function App() {
   const [selected, setselected] = useState("home");
   return (
     <div className="App">
-      <Topbar selected={selected} setselected={setselected}/>
+      <Topbar selected={selected}/>
       <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Home selected={selected} setselected={setselected}/>}/>
-            <Route path="/About" element={<About selected={selected} setselected={setselected}/>}/>
-            <Route path="/OurWork" element={<Ourwork selected={selected} setselected={setselected}/>}/>
-            <Route path="/Ourmember" element={<Ourmember selected={selected} setselected={setselected}/>}/>
-            <Route path="/Event" element={<Event selected={selected} setselected={setselected}/>}/>
-            <Route path="/Contactus" element={<Contactus selected={selected} setselected={setselected}/>}/>
+            <Route path="/" element={<Home setselected={setselected}/>}/>
+            <Route path="/About" element={<About setselected={setselected}/>}/>
+            <Route path="/OurWork" element={<Ourwork setselected={setselected}/>}/>
+            <Route path="/Ourmember" element={<Ourmember setselected={setselected}/>}/>
+            <Route path="/Event" element={<Event setselected={setselected}/>}/>
+            <Route path="/Contactus" element={<Contactus setselected={setselected}/>}/>
         </Routes>
       </BrowserRouter>
     </div>

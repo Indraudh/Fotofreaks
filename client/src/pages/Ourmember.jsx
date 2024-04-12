@@ -1,6 +1,6 @@
 import Defaultlayout from '../components/Defaultlayout';
 import './ourmember.scss';
-export default function Ourmember({selected , setselected}) {
+export default function Ourmember({setselected}) {
   setselected("ourmember");
   return (
     <Defaultlayout>

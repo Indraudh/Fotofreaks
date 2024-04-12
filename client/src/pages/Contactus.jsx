@@ -1,6 +1,6 @@
 import Defaultlayout from '../components/Defaultlayout';
 import './contactus.scss';
-export default function Contactus({selected , setselected}) {
+export default function Contactus({setselected}) {
   setselected("contact");
   return (
     <Defaultlayout>
